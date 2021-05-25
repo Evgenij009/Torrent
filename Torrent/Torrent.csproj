@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove=".png" />
+    <None Remove="AddButtonImage.png" />
+    <None Remove="icon.ico" />
+    <None Remove="ResumeDownloadButtonImage.png" />
+    <None Remove="StopDownloadButton.png" />
+    <None Remove="windows\AddButtonImage.png" />
+    <None Remove="windows\ResumeDownloadButtonImage.png" />
+    <None Remove="windows\StopDownloadButton.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TorrentLibrary\TorrentLibrary.csproj" />
+  </ItemGroup>
+
+</Project>

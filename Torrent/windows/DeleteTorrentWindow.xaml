@@ -1,0 +1,24 @@
+﻿<Window x:Name="DeleteTorrentWindow1" x:Class="Torrent.DeleteTorrentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Torrent"
+        mc:Ignorable="d"
+        Title="Delete" Height="182" Width="333"  ResizeMode="NoResize">
+    <Grid Margin="0,0,0,-16">
+        <CheckBox x:Name="DeleteFromTorrentsFolderCheckBox" Content="Remove file from folder Torrents." HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="DeleteFromDownloadsFolderCheckBox" Content="Remove downloaded content from folder Downloads." HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top"/>
+        <Label Content="Delete torrent." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Background="#7FB8B8B8" FontSize="18" FontWeight="Bold"/>
+        <Button x:Name="DeleteButton"   Foreground="Black" BorderBrush="Black" Style="{StaticResource DeleteButtonStyle}" Background="#BF4B4B4B" Click="DeleteButton_Click" Margin="21,100,193,31">
+            <StackPanel Orientation="Horizontal" TextElement.Foreground="White" TextElement.FontSize="16">
+                <TextBlock Text=" Yes " Width="34" />
+            </StackPanel>
+        </Button>
+        <Button x:Name="DeleteButton_Copy"  Foreground="Black" BorderBrush="Black" Style="{StaticResource DeleteButtonStyle}" Background="#BF4B4B4B" Click="DeleteButton_Copy_Click" Margin="157,100,55,31">
+            <StackPanel Orientation="Horizontal" TextElement.Foreground="White" TextElement.FontSize="16">
+                <TextBlock HorizontalAlignment="Center" Text=" No " VerticalAlignment="Center" />
+            </StackPanel>
+        </Button>
+    </Grid>
+</Window>
